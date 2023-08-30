@@ -1,5 +1,3 @@
 #!/bin/bash
-
-
-current_directory=$(readlink -f .)
-echo "$current_directory"
+$cd alx-system_engineering-devops/0x00-shell_basics/0-current_working_directory
+$pwd
