@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -maxdepth 1 -name '*.html.in' -exec cp -u {} ../$(basename {} .in)
+find . -maxdepth 1 -name "*.html" -newer ../ -exec cp -u {} ../ 
