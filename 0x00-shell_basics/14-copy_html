@@ -1,2 +1,2 @@
 #!/bin/bash
-for file in *.html.in; do cp -u "$file" ../"${file%.in}"; done
+find . -maxdepth 1 -name '*.html.in' -exec cp -u {} ../$(basename {} .in) \;
